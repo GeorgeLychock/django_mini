@@ -1,0 +1,11 @@
+Requirement already satisfied: pytz in /usr/lib/python3/dist-packages (from django) (2019.3)
+Installing collected packages: asgiref, sqlparse, django
+Successfully installed asgiref-3.4.1 django-3.2.9 sqlparse-0.4.2
+
+
+
+
+
+asgiref==3.4.1
+Django==3.2.9
+sqlparse==0.4.2
