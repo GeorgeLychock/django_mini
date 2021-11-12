@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from mini.views import home_page
+from mini.views import home_page, add_item
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_page, name='home'),
+    path('add', add_item, name='add')
 ]
