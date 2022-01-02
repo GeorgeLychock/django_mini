@@ -28,7 +28,7 @@
 <a name="UC"></a>
 
 # Use Case
-StreetHeat is a patented garment accessory that provides a user extra comfort by attaching a heating or cooling element to an existing piece of clothing, such as a scarf. The product website should show a prospective customer where they can purchase StreetHeat in proximaty to their current location while also providing the visitor with their location's current weather, traffic conditions, and a map that displays locations of coffee houses, soup shops, ice cream shops, smoothie shops or other establishments a user might be interested in when trying to battle the elements. A visitor should be able to view a product page on a specific version of StreetHeat as well as a means to purchase the product online.
+StreetHeat v1.0 is a patented garment accessory that provides a user extra comfort by attaching a heating or cooling element to an existing piece of clothing, such as a scarf. The product website should show a prospective customer where they can purchase StreetHeat in proximaty to their current location while also providing the visitor with their location's current weather, traffic conditions, and a map that displays locations of coffee houses, soup shops, ice cream shops, smoothie shops or other establishments a user might be interested in when trying to battle the elements. A visitor should be able to view a product page on a specific version of StreetHeat as well as a means to purchase the product online.
 
 -   ### Resources Used
     -   [MDN General Web Docs: ](https://developer.mozilla.org/) For semantic structure reference, arrays, localStorage, fetch.
