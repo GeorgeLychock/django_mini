@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 if development:
     SECRET_KEY = os.environ.get('SECRET_KEY_DEV')
 else:
-    SECRET_KEY = os.environ.get('SECRET_KEY', '-^ko#u#r_e+p4*5pzy1k1wl)wrpm)*4zl)i6w_569z(xk@6u@x')
+    SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
