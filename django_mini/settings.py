@@ -27,13 +27,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = development
 
-ALLOWED_HOSTS = ['gl001-django-todo.herokuapp.com']
-# if development:
-#     ALLOWED_HOSTS = ['127.0.0.1']
-# else:
-#     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
+# ALLOWED_HOSTS = ['gl001-django-todo.herokuapp.com']
+if development:
+    ALLOWED_HOSTS = ['127.0.0.1']
+else:
+    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 # Application definition
 
@@ -88,10 +88,20 @@ WSGI_APPLICATION = 'django_mini.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': dj_database_url.parse('postgres://iuvmtkjxfamqzv:9be9088eaa75fae88e47d15b845942cc1bee7ace8e0dfda0329ad8555d83aabe@ec2-3-227-154-49.compute-1.amazonaws.com:5432/dd1rfj73c7p4e5')
-}
-
+# DATABASES = {
+#     'default': dj_database_url.parse('postgres://iuvmtkjxfamqzv:9be9088eaa75fae88e47d15b845942cc1bee7ace8e0dfda0329ad8555d83aabe@ec2-3-227-154-49.compute-1.amazonaws.com:5432/dd1rfj73c7p4e5')
+# }
+if development:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+else:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
