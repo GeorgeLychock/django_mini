@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '2erm2g25fi&()6+d)rp0(1gw!vp^v2aoxpmfebc^1_2gbjc-@#'
+SECRET_KEY = '5d=wfn!vb_kfgp2u$y*l^v-jab@#x_0(n$)5szm1hj5)zz0$y8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://uzybznjwrvpeeu:0f1318547e3b59b03e4a80188a17ab64e1cfea59f883aa7adc2b18c04648ac94@ec2-52-71-231-180.compute-1.amazonaws.com:5432/dakq9bot4llbqt')
+    'default': dj_database_url.parse('postgres://iuvmtkjxfamqzv:9be9088eaa75fae88e47d15b845942cc1bee7ace8e0dfda0329ad8555d83aabe@ec2-3-227-154-49.compute-1.amazonaws.com:5432/dd1rfj73c7p4e5')
 }
 
 
