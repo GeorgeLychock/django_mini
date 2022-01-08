@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 import dj_database_url
 from pathlib import Path
-import env as env
+# import env as env
 
 # development = os.environ.get('DEVELOPMENT', "False")
 
