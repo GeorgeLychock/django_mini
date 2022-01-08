@@ -10,9 +10,10 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 import dj_database_url
 from pathlib import Path
-# import env as env
+if os.path.exists("env.py"):
+    import env
 
-# development = os.environ.get('DEVELOPMENT', "False")
+development = os.environ.get('DEVELOPMENT', False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
