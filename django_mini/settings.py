@@ -26,13 +26,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = development
+DEBUG = True
 
-# ALLOWED_HOSTS = ['gl001-django-todo.herokuapp.com']
-if development:
-    ALLOWED_HOSTS = ['127.0.0.1']
-else:
-    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
+ALLOWED_HOSTS = ['gl001-django-todo.herokuapp.com']
+# if development:
+#     ALLOWED_HOSTS = ['127.0.0.1']
+# else:
+#     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 # Application definition
 
